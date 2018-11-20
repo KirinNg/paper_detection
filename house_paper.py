@@ -2,14 +2,19 @@ import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 
-path = "demo.jpg"
+path = "demo2.jpg"
 kernel_size = (3, 3)
 sigma = 10
 
 img = cv2.imread(path)
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 blur = cv2.GaussianBlur(gray,(3,3),10)
-ret,binary = cv2.threshold(blur, 100, 255, cv2.THRESH_BINARY)
+edges = cv2.Canny(blur,100,200)
+
+ret,binary = cv2.threshold(edges, 127, 255, cv2.THRESH_BINARY)
+
+# plt.imshow(binary)
+# plt.show()
 
 _,contours, hierarchy = cv2.findContours(binary, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
 
@@ -24,6 +29,6 @@ draw_img = cv2.drawContours(img.copy(), [box], 0, (0, 255, 0), 3)
 
 new_img = img[box[1][1]:box[3][1], box[1][0]:box[3][0]]
 
-# plt.imshow(new_img)
-# plt.show()
-plt.imsave("out.png", new_img)
+plt.imshow(draw_img)
+plt.show()
+# plt.imsave("out.png", new_img)
