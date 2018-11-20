@@ -24,5 +24,6 @@ draw_img = cv2.drawContours(img.copy(), [box], 0, (0, 255, 0), 3)
 
 new_img = img[box[1][1]:box[3][1], box[1][0]:box[3][0]]
 
-plt.imshow(new_img)
-plt.show()
+# plt.imshow(new_img)
+# plt.show()
+plt.imsave("out.png", new_img)
