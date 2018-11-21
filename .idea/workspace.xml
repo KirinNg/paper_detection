@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e37b50cf-ed49-4cc5-915c-7b51154379bc" name="Default" comment="add_out">
-      <change beforePath="$PROJECT_DIR$/.idea/house_paper.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/house_paper.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="e37b50cf-ed49-4cc5-915c-7b51154379bc" name="Default" comment="muti_files">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/IN/demo0.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo1.png" beforeDir="false" afterPath="$PROJECT_DIR$/IN/demo1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/IN/demo2.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/match.py" beforeDir="false" afterPath="$PROJECT_DIR$/match.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out.png" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,26 +27,26 @@
         <counts>
           <entry key="jpg" value="2" />
           <entry key="png" value="2" />
-          <entry key="py" value="6" />
+          <entry key="py" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Image" value="4" />
-          <entry key="Python" value="6" />
+          <entry key="Python" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Python Console" value="8" />
-          <entry key="py" value="806" />
-          <entry key="txt" value="20" />
+          <entry key="py" value="875" />
+          <entry key="txt" value="30" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="20" />
-          <entry key="Python" value="814" />
+          <entry key="PLAIN_TEXT" value="30" />
+          <entry key="Python" value="883" />
         </counts>
       </usages-collector>
     </session>
@@ -62,11 +56,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/match.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="453">
-              <caret line="63" column="100" lean-forward="true" selection-start-line="63" selection-start-column="100" selection-end-line="63" selection-end-column="100" />
+            <state relative-caret-position="411">
+              <caret line="55" column="19" lean-forward="true" selection-start-line="55" selection-start-column="19" selection-end-line="55" selection-end-column="19" />
               <folding>
-                <element signature="e#0#10#0" expanded="true" />
+                <element signature="e#0#21#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/.PyCharm2018.2/system/python_stubs/503105342/time.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-16">
+              <caret line="83" column="4" selection-start-line="83" selection-start-column="4" selection-end-line="83" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -397,7 +400,21 @@
       <option name="project" value="LOCAL" />
       <updated>1542699372842</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="muti_files">
+      <created>1542760320572</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1542760320572</updated>
+    </task>
+    <task id="LOCAL-00004" summary="muti_files">
+      <created>1542760453156</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1542760453156</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -437,7 +454,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="demo_one" />
     <MESSAGE value="add_out" />
-    <option name="LAST_COMMIT_MESSAGE" value="add_out" />
+    <MESSAGE value="muti_files" />
+    <option name="LAST_COMMIT_MESSAGE" value="muti_files" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$USER_HOME$/.PyCharm2018.2/system/python_stubs/503105342/cv2/cv2/__init__.py" />
@@ -454,12 +472,19 @@
     <entry file="file://$PROJECT_DIR$/target.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2018.2/system/python_stubs/503105342/time.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-16">
+          <caret line="83" column="4" selection-start-line="83" selection-start-column="4" selection-end-line="83" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/match.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="63" column="100" lean-forward="true" selection-start-line="63" selection-start-column="100" selection-end-line="63" selection-end-column="100" />
+        <state relative-caret-position="411">
+          <caret line="55" column="19" lean-forward="true" selection-start-line="55" selection-start-column="19" selection-end-line="55" selection-end-column="19" />
           <folding>
-            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#0#21#0" expanded="true" />
           </folding>
         </state>
       </provider>

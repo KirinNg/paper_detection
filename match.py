@@ -1,7 +1,6 @@
 import cv2 # 3.4.2.17
 import numpy as np
 import os
-import datetime
 
 MAX_FEATURES = 40000
 GOOD_MATCH_PERCENT = 0.2
@@ -26,7 +25,7 @@ def alignImages(im1, im2):
     numGoodMatches = int(len(matches) * GOOD_MATCH_PERCENT)
     matches = matches[:numGoodMatches]
 
-    imMatches = cv2.drawMatches(im1, keypoints1, im2, keypoints2, matches, None)
+    # imMatches = cv2.drawMatches(im1, keypoints1, im2, keypoints2, matches, None)
     # cv2.imwrite("matches.jpg", imMatches)
 
     points1 = np.zeros((len(matches), 2), dtype=np.float32)
@@ -40,25 +39,19 @@ def alignImages(im1, im2):
 
     height, width, channels = im2.shape
     im1Reg = cv2.warpPerspective(im1, h, (width, height))
-
     return im1Reg, h
-
 
 if __name__ == '__main__':
     refFilename = "target.png"
     imReference = cv2.imread(refFilename, cv2.IMREAD_COLOR)
-
     for dirpath, dirnames, filenames in os.walk(IN_PATH):
         for filepath in filenames:
-            starttime = datetime.datetime.now()
-
-            imFilename = os.path.join(IN_PATH, filepath)
-
-            im = cv2.imread(imFilename, cv2.IMREAD_COLOR)
-            imReg, h = alignImages(im, imReference)
-
-            outFilename = os.path.join(OUT_PATH, "out_" + filepath)
-            cv2.imwrite(outFilename, imReg)
-
-            endtime = datetime.datetime.now()
-            print(filepath+"    success!   usetime:" + str((endtime - starttime).microseconds/100000))
+            try:
+                imFilename = os.path.join(IN_PATH, filepath)
+                im = cv2.imread(imFilename, cv2.IMREAD_COLOR)
+                imReg, h = alignImages(im, imReference)
+                outFilename = os.path.join(OUT_PATH, "out_" + filepath)
+                cv2.imwrite(outFilename, imReg)
+                print(filepath+"    success!")
+            except:
+                print(filepath+"    failed!")
