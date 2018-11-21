@@ -1,4 +1,4 @@
-import cv2
+import cv2 # 3.4.2.17
 import numpy as np
 import os
 import datetime
