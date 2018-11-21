@@ -2,8 +2,8 @@ import cv2 # 3.4.2.17
 import numpy as np
 import os
 
-MAX_FEATURES = 40000
-GOOD_MATCH_PERCENT = 0.2
+MAX_FEATURES = 100000
+GOOD_MATCH_PERCENT = 0.03
 IN_PATH = "IN"
 OUT_PATH = "OUT"
 orb = cv2.ORB_create(MAX_FEATURES)
